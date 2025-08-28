@@ -1,0 +1,135 @@
+<!-- Well-structured content using lists, tables, and media.
+
+A complete HTML5 form including a variety of input fields.
+
+Correct use of form attributes such as placeholder, required, autocomplete, and readonly.
+
+HTML5 validation features implemented correctly across all relevant fields.
+
+A clear, accessible layout using semantic tags. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Example</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML Page</h1>
+    <p>This page demonstrates lists, tables, media, and an accessible HTML5 form.</p>
+  </header>
+
+  <main>
+    <!-- List -->
+    <section>
+      <h2>Hairstyles I Love</h2>
+      <ul>
+        <li>Packing gel</li>
+        <li>Bantu knots</li>
+        <li>Knotless braids</li>
+      </ul>
+    </section>
+
+    <!-- Media -->
+    <section>
+      <h2>Video Tutorial</h2>
+      <p>Play this video to see how these hairstyles can be made:</p>
+      <video controls width="400">
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Table -->
+    <section>
+      <h2>Friends List</h2>
+      <table border="1" style="width:100%; border-collapse: collapse;">
+        <caption>Names of My Friends</caption>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Uche</td>
+            <td>Onyebuchi</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Vivian</td>
+            <td>Ife</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>Blessing</td>
+            <td>Ugo</td>
+            <td>27</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <p>Kindly fill out this form:</p>
+      <form action="/submit" method="post" autocomplete="on">
+        <!-- Text input -->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter first name" required>
+        <br><br>
+
+        <!-- Last name -->
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter last name" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+        <br><br>
+
+        <!-- Readonly field -->
+        <label for="ref">Referral Code:</label>
+        <input type="text" id="ref" name="ref" value="AUTO123" readonly>
+        <br><br>
+
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Radio buttons -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit Form">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Enhanced Form Page</p>
+  </footer>
+</body>
+</html>
